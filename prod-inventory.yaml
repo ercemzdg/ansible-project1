@@ -1,0 +1,6 @@
+---
+all:
+  hosts: # all ungrouped hosts
+    host2:
+      ansible_host: "137.184.214.131"
+      ansible_port: "22"
