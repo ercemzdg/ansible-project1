@@ -1,6 +1,13 @@
 ---
 - name: Ping servers
   hosts: all
+  vars:
+    key1: True
+    key2: "value2"
   tasks:
     - name: Ping
       ping:
+
+    - name: Print variables
+      debug:
+        msg: "{{  key1  }} {{  key2  }}"
